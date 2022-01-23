@@ -35,3 +35,14 @@ body {margin:0;}
     background-color: #994b0c;
     color: white;
   }
+
+  button {
+    background-color: black;
+    border: none;
+    color: rgb(221, 144, 29);
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+  }
