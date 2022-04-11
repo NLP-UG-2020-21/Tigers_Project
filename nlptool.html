@@ -19,19 +19,33 @@
         </div>
 
         <div class="main">
-        <center>
-        <br>
-        <h1>RawrTextAnalyser</h1>
-        <br>
-        <textarea rows = "5" cols = "60" name = "description" id="myInput"></textarea>
-        <br><br>
-        <button onclick="document.getElementById('myInput').value = ''">Clear input field</button>
-        <button type="button" onclick="getInputValue();">Go!</button>
-        </center>
-        </div>
-        <p id="nlptool"></p>
         
+        <br>
+        
+        <div class="column">
+        <h1>RawrTextAnalyser</h1>
+            <select id="selection">
+                <option value="">Please select</option>
+                <option value="tokenizer">Tokenizer</option>
+                <option value="stemmer">Stemmer</option>
+            </select>
+            <br><br>
+            <textarea rows = "5" cols = "60" name = "description" id="myInput" placeholder="Input Your Text Here!"></textarea>
+            <br><br>
+            
+            <button onclick="document.getElementById('myInput').value = '';">Clear input field</button>
+            <button id="btn" type="button">Go!</button>
+         </div> 
+        <div class="column"></div>
+            
+        </div> 
+        <div class="column">
+            <div id=result>The Result Shows Here!</div>
+            
+        </div>
+        </div>
         <script src="nlptool.js"></script>
+        <script src=PorterStemmer1980.js></script>
 
     </body>
 

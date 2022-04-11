@@ -2,6 +2,11 @@ html {
     background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {margin:0;}
@@ -50,7 +55,8 @@ h1 {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
+    border-radius: 12px;
   }
 
   button:hover{
@@ -60,11 +66,11 @@ h1 {
 
   .Intro {
     justify-content: center;
-    font-family: Copperplate, Papyrus, fantasy;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 24px;
+    color:#00a2ff;
   }
-  #member1{
+  /* #member1{
       width: auto;
       height: auto;
       display:inline-block;
@@ -90,5 +96,74 @@ h1 {
   cursor: pointer; 
   float: left; 
   width: 100%;
+} */
+
+textarea,#result{
+  width:600px;
+  height:300px;
+  overflow-y:scroll;
+  font-family:monospace;
+  font-size: 18px;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px 0 #00a2ff;
 }
 
+#result{
+  margin-top: 153px;
+  background:rgb(21, 22, 22);
+  padding:5px;text-align:left;
+  color:#00a2ff;
+}
+
+#selection {
+  position: relative;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #00a2ff;
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 8px;
+  padding: 4px 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.column {
+  margin-top: 40px;
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  margin-left: 40px;
+  padding: 0 8px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+.container {
+  padding: 0 16px;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px 0 #00a2ff;
+}
+
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.photo {
+  width: 60%;
+}
+
+h2 {
+  color:#00a2ff;
+}
