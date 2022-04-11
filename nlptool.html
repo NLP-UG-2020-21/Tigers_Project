@@ -21,8 +21,7 @@
         <div class="main">
         
         <br>
-        
-        <div class="column">
+        <div class="heading">
         <h1>RawrTextAnalyser</h1>
             <select id="selection">
                 <option value="">Please select</option>
@@ -30,16 +29,18 @@
                 <option value="stemmer">Stemmer</option>
             </select>
             <br><br>
+        </div>
+            <div class="column2">
             <textarea rows = "5" cols = "60" name = "description" id="myInput" placeholder="Input Your Text Here!"></textarea>
             <br><br>
             
             <button onclick="document.getElementById('myInput').value = '';">Clear input field</button>
             <button id="btn" type="button">Go!</button>
          </div> 
-        <div class="column"></div>
+        <div class="column2"></div>
             
         </div> 
-        <div class="column">
+        <div class="column2">
             <div id=result>The Result Shows Here!</div>
             
         </div>
