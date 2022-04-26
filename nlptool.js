@@ -4,7 +4,7 @@ function getInputValue(){
     let tokenizer = inputVal.split(/\W+/);
     var wordCount = inputVal.match(/(\w+)/g).length;
     
-    document.getElementById('result').innerHTML = "Number of tokens: "+wordCount+" <br><br> Tokens:<br><br>"+tokenizer.join(", ");
+    document.getElementById('result').innerHTML = "Number of tokens: "+wordCount+" <br><br> Tokens:<br><br>"+tokenizer.join('<br>');
 }
 
 
