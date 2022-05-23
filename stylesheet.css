@@ -19,6 +19,11 @@ h1 {
   font-family: Copperplate, Papyrus, fantasy;
 }
 
+h2 {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
 .topnav {
     overflow: hidden;
     background-color: #00a2ff;
