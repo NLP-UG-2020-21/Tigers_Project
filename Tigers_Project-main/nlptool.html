@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RawrTextAnalyser</title>
+        <link rel='stylesheet' href='stylesheet.css'>
+        <link rel='favicon' href='favicon.ico' type='image/x-icon'>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="nlptool.html">RawrTextAnalyser</a>
+            <a href="abouttool.html">About the Tool</a>
+            <a href="aboutus.html">About Us</a>
+
+        </div>
+
+        <div class="main">
+        
+        <br>
+        <div class="heading">
+        <h1>RawrTextAnalyser</h1>
+            <select id="selection">
+                <option value="">Please select</option>
+                <option value="tokenizer">Tokenizer</option>
+                <option value="stemmer">Stemmer</option>
+                <option value="parser">Syntax Tree Parser</option>
+                <option value="postag">Part of Speech Tagger</option>
+            </select>
+            <br><br>
+        </div>
+            <div class="column2">
+            <textarea rows = "5" cols = "60" name = "description" id="myInput" placeholder="Input Your Text Here!"></textarea>
+            <br><br>
+            
+            <button onclick="document.getElementById('myInput').value = '';">Clear input field</button>
+            <button id="btn" type="button">Go!</button>
+         </div> 
+        <div class="column2"></div>
+            
+        </div> 
+        <div class="column2">
+            <div id=result>The Result Shows Here!</div>
+            
+        </div>
+        </div>
+        <script src="nlptool.js"></script>
+        <script src=PorterStemmer1980.js></script>
+        <script src=parser.js></script>
+        <script src=postag.js></script>
+
+    </body>
+
+</html>
