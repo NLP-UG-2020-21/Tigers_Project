@@ -6,32 +6,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RawrTextAnalyser</title>
         <link rel='stylesheet' href='stylesheet.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='favicon' href='favicon.ico' type='image/x-icon'>
     </head>
 
     <body>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="nlptool.html">RawrTextAnalyser</a>
-            <a class="active" href="abouttool.html">About the Tool</a>
+            <a href="abouttool.html">About the Tool</a>
             <a href="aboutus.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
 
         </div>
 
         <div class="main">
         <center>
             <br>
-            <h1>ABOUT THE TOOL</h1> 
+            <h1>About the tool</h1> 
             <BR>
-            <h2><i>Tokenization</i> is a way of separating a piece of text into smaller units called tokens. Here, tokens can be either words, characters, or subwords. Hence, tokenization can be broadly classified into 3 types – word, character, and subword (n-gram characters) tokenization.<br>
+                <h2>Tokenization</h2>
+                <h3>A way of separating a piece of text into smaller units called tokens. Here, tokens can be either words, characters, or subwords. <br>Hence, tokenization can be broadly classified into 3 types – word, character, and subword (n-gram characters) tokenization.</h3><br>
             <br>
             <br>
-            <i>Stemming</i> is a technique that lowers inflection in words to their root forms.</h2><br>
-            <br> 
+                <h2>Stemming</h2> 
+                <h3>A technique that lowers inflection in words to their root forms. Our tool uses the Porter Stemmer - It is one of the most popular stemming methods proposed in 1980. It is based on the idea that the suffixes in the English language are made up of a combination of smaller and simpler suffixes.</h3><br>
+            <br>
+            <br>
+                <h2>POS Tagging</h2>
+                <h3>Part of Speech Tagging is the process of marking up a word in a text as corresponding to a particular part of speech</h3>
+            <br>
+            <br>
         </center>
         </div>
         
-        <script></script>
+        <script src="script.js"></script>
 
     </body>
 
