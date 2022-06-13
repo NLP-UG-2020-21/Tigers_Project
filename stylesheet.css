@@ -68,6 +68,11 @@ a:hover {
     color: #00a2ff;
   }
 
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  
   button {
     background-color: #00a2ff;
     border: none;
@@ -109,6 +114,11 @@ textarea,#result{
   background:rgb(21, 22, 22);
   padding:5px;text-align:left;
   color:#00a2ff;
+  max-width: 100%;
+}
+
+#myInput {
+  max-width: 100%;
 }
 
 #selection {
@@ -149,6 +159,7 @@ p {
 .column2 {
   float: left;
   width: 50%;
+  height: auto;
   margin-bottom: 16px;
   padding: 10px;
 }
