@@ -47,6 +47,7 @@ const parser = async () => {
   fetch('https://api.cloudmersive.com/nlp-v2/parse/tree', requestOptions)
     .then(response => response.json())
     .then(response => response["ParseTree"])
+    .then(response => response.replaceAll("\n", "<br>"))
     .then(response => document.getElementById('result').innerHTML = response);
 }
 
