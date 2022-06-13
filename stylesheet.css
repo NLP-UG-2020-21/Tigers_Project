@@ -43,7 +43,7 @@ a:hover {
     top: 0;
     width: 100%;
   }
-  
+
   .topnav a {
     float: left;
     display: block;
@@ -57,7 +57,7 @@ a:hover {
   .topnav .icon {
     display: none;
   }
-  
+
   .topnav a:hover {
     background: #5fb8ec;
     color: white;
@@ -72,7 +72,7 @@ a:hover {
     max-width: 100%;
     height: auto;
   }
-  
+
   button {
     background-color: #00a2ff;
     border: none;
@@ -218,4 +218,16 @@ p {
 
 h2 {
   color:#00a2ff;
+}
+
+.left, .right {
+  width: 49%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }
