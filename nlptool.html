@@ -6,15 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RawrTextAnalyser</title>
         <link rel='stylesheet' href='stylesheet.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='favicon' href='favicon.ico' type='image/x-icon'>
     </head>
 
     <body>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
-            <a class="active" href="nlptool.html">RawrTextAnalyser</a>
+            <a href="nlptool.html">RawrTextAnalyser</a>
             <a href="abouttool.html">About the Tool</a>
             <a href="aboutus.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
 
         </div>
 
@@ -27,26 +31,30 @@
                 <option value="">Please select</option>
                 <option value="tokenizer">Tokenizer</option>
                 <option value="stemmer">Stemmer</option>
+                <option value="parser">Syntax Tree Parser</option>
+                <option value="postag">Part of Speech Tagger</option>
             </select>
             <br><br>
         </div>
+        <div class="row">
             <div class="column2">
-            <textarea rows = "5" cols = "60" name = "description" id="myInput" placeholder="Input Your Text Here!"></textarea>
-            <br><br>
+                <textarea rows = "5" cols = "60" name = "description" id="myInput" placeholder="Input Your Text Here!"></textarea>
+                <br><br>
             
-            <button onclick="document.getElementById('myInput').value = '';">Clear input field</button>
-            <button id="btn" type="button">Go!</button>
-         </div> 
-        <div class="column2"></div>
-            
-        </div> 
-        <div class="column2">
-            <div id=result>The Result Shows Here!</div>
-            
+                <button onclick="document.getElementById('myInput').value = '';">Clear input field</button>
+                <button id="btn" type="button">Go!</button>
+            </div> 
+            <div class="column2">
+            <div id=result>The Result Shows Here!</div>    
+            </div>
         </div>
+           
         </div>
         <script src="nlptool.js"></script>
         <script src=PorterStemmer1980.js></script>
+        <script src=parser.js></script>
+        <script src=postag.js></script>
+        <script src="script.js"></script>
 
     </body>
 

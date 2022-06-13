@@ -4,26 +4,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RawrTextAnalyser</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel='stylesheet' href='stylesheet.css'>
         <link rel='favicon' href='favicon.ico' type='image/x-icon'>
     </head>
 
     <body>
-        <div class="topnav">
+        <div class="topnav" id="myTopnav">
             <a href="index.html">Home</a>
             <a href="nlptool.html">RawrTextAnalyser</a>
             <a href="abouttool.html">About the Tool</a>
-            <a class="active" href="aboutus.html">About Us</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
 
         </div>
 
         <div class="main">
         <br>
-        <p class="Intro">Hi! <br>
+        <p class="Intro">Hi!
             We are <span style="font-family: Copperplate, Papyrus, fantasy; font-size: 28px;"><b>Tigers</b></span><br>
-            A developer team from Poland focused on NLP tools.<br>
+            A group of students from Poland focused on the development of NLP tools.
+            With this RawrTextAnalyser we hope to provide a tool for simple text analysis. The project is still in development with new tools being added to it over time. Our aim is to gather the most frequently used tools in one place for your convinience.
+            <br>To read about the currently available tools go to the <a href="abouttool.html">About the Tool</a> section of our website.
+            <br><br>
             Meet our team: <br>
         </p>
+        
+        </div>
         <center>
         <div class="row">
             <div class="column">
@@ -31,7 +40,10 @@
                 <img src="img1.jpg" alt="Karolina" class="photo">
                 <div class="container">
                   <h2>Karolina Jezierna</h2>
-                  <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                  <p>Hi! I have completed my BA degree in English Philology with a specialisation in teaching. Recently I became interested in syntactic analysis of languages and new technologies. I am now starting my career in natural language processing as I work on broadening my knowledge and expanding my skillset.
+                    <br><center><a href="https://www.linkedin.com/in/karolina-jezierna-321236232/"><i class="fa fa-linkedin"></i></a>
+                      <a href="https://github.com/KarolinaJez"><i style="font-size:24px" class="fa">&#xf09b;</i></a></center>
+                  </p>
                 </div>
               </div>
             </div>
@@ -41,7 +53,9 @@
                 <img src="img2.jpg" alt="Ola" class="photo">
                 <div class="container">
                   <h2>Ola Kaczanowska</h2>
-                  <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                  <p>Some text that describes me lorem ipsum ipsum lorem.
+                  <br><center><a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/alexaka00"><i style="font-size:24px" class="fa">&#xf09b;</i></a></center></p>
                 </div>
               </div>
             </div>
@@ -51,14 +65,14 @@
                 <img src="img3.jpg" alt="Dawid" class="photo">
                 <div class="container">
                   <h2>Dawid Demko</h2>
-                  <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+                  <p>-left the team in pursuit of a different career-</p>
                 </div>
               </div>
             </div>
           </div> 
         </center>
-        </div>
-        <script src="aboutus.js"></script>
+        
+        <script src="script.js"></script>
 
     </body>
 
